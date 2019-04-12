@@ -27,15 +27,16 @@ int main(int argc, char* argv[]){
     //functionVal(*due);
     //debugCustomShit(*due);
 
-    //debugLog("By Ref - %s", "tre");
-    //functionRef(&tre);
-    //debugCustomShit(tre);
+    debugLog("By Ref - %s", "tre");
+    functionRef(&tre);
+    debugCustomShit(tre);
 
-    debugLog("By Ref - %s", "quattro");
-    functionRef(quattro);
+    //debugLog("By Ref - %s", "quattro");
+    //functionRef(quattro);
+    //debugLog("quattro->att1 = %d", quattro->att1);
 
     getTick(&et);
-    infoLog(ssprintf("Completed. ETA %s", getETA(st, et)));
+    infoLog("Completed. ETA %s", getETA(st, et));
 
     return 0;
 }
